@@ -74,8 +74,8 @@ I am Base func
 struct Student {
     
 };
-Student(){}
-Struct Student s; //ok
+//Student(){}
+struct Student s; //ok
 Student s;  //ok
 ```
 
@@ -86,7 +86,7 @@ struct Student {
     
 };
 Student(){}
-Struct Student s; //ok
+struct Student s; //ok
 Student s;  //error
 ```
 
@@ -114,8 +114,8 @@ typedef struct Base1 {
 
 struct Base {         
     int v1;
-//    private:   //error!
-        int v3;
+
+    int v3;
     public:     //显示声明public
         int v2;
     void print(){       
@@ -145,8 +145,8 @@ int main() {
 #include<stdio.h>
 struct Base {         
     int v1;
-//    private:   //error!
-        int v3;
+
+    int v3;
     public:   //显示声明public
         int v2;
     virtual void print(){       
@@ -178,8 +178,8 @@ int main() {
 
 struct Base {         
     int v1;
-//    private:   //error!
-        int v3;
+
+    int v3;
     public:     //显示声明public
         int v2;
     void print(){       
@@ -189,8 +189,8 @@ struct Base {
 
 typedef struct Base1 {         
     int v1;
-//    private:   //error!
-        int v3;
+
+    int v3;
     public:     //显示声明public
         int v2;
     void print(){       
